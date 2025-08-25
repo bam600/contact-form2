@@ -1,0 +1,160 @@
+ /* loginページのみの全背景の設定 */
+  /* registerページのみの全背景の設定 */
+body.login,
+body.register {
+    background-color: #F1ECE7;
+}
+
+body.confirm{
+    background-color: #ffffff;
+}
+
+h1,
+h2 {
+    display: block;
+    max-height: 100px;
+    padding: 20px 0;
+    line-height: 1.2;
+    margin: 20px auto;
+    color: #8B7969;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+ /* 見出し1 */
+ h1 {
+    margin-top: 0;
+    font-size: 40px;
+    text-align: center;border-bottom: 1px solid #E0DFDE;
+    background-color: #ffffff;
+}
+
+/* 見出し2 */
+h2{
+    font-size: 35px;
+    font-family: 'Inika', serif;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    /* 横方向の中央揃え */
+    align-items: center;
+    /* 縦方向の中央揃え（必要に応じて） */
+    min-height: 60vh;
+    /* 画面中央に配置するための高さ */
+}
+
+.form__container {
+    background-color: #ffffff !important;
+    border: 2px solid #C5B9B0 !important;
+    padding: 24px 32px;
+    width: 736px;
+    height: 579px;
+    box-sizing: border-box;
+    position: relative;
+    /* 中央配置の基準にする */
+    overflow: hidden;
+}
+
+.form__inner {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 完全中央揃え */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 445px;
+}
+
+.form__row {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 12px;
+    /* 左余白 */
+}
+
+.form__cell {
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    /* 元のform__boxと同じ幅 */
+}
+
+/* 項目名　入力内容確認用フォント */
+.item__name{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Inika', serif;
+    color:#8B7969;
+    display: block;
+    margin-bottom: 2px;
+    /* ← ここを調整 */
+}
+
+/* 必須マーク用 */
+.required__field{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Inika', serif;
+    color: #FF9494;
+}
+
+/* 入力フォーム用フォント */
+.form__specific{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Inika', serif;
+    color: #BEB1A6;
+}
+
+/* 入力フォーム用背景 */
+.form__box {
+    height: 48px;
+    background-color: #F4F4F4;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Inika', serif;
+    color: #BEB1A6;
+}
+
+.form__row--center {
+    justify-content: center;
+    padding-top: 16px;
+}
+
+.form__group {
+    margin-bottom: 6px;
+    /* ← グループ間の余白を詰める */
+    padding-left: 12px;
+    /* ← 左側に少し余白を入れる */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ボタン設定用(テキスト中央揃え)*/
+.form__button {
+    width: 120px;
+    margin: 0 4px;
+    /* 左右の余白を調整して近づける */
+    padding: 8px 16px;
+    font-size: 20px;
+    background-color: #82756A;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 1em;
+    margin-top: 19px
+}

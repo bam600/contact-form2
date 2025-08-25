@@ -1,0 +1,114 @@
+ 
+
+
+
+.table-name{
+    height: 38px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+th,td {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+}
+
+h1 {
+    width:100%;
+    height: 100%;
+    max-height: 100px;
+    margin: 20px auto;
+    line-height: 100px;
+    color: #8B7969;
+    font-size: 40px;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;border-bottom: 1px solid #E0DFDE;
+}
+
+h2{
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    margin: 20px auto;
+    color: #8B7969;
+    font-size: 35px;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.form__label--item{
+    color: #8B7969;
+    font-size: 20px;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align:left;
+    display: block;
+        }
+
+label .required {
+    color: red;
+}
+
+.gender {
+    width: 287px;
+    height: 38px;
+    border: none;
+}
+
+.gender label{
+    text-align: left;
+    color: #8B7969;
+    font-size: 18px;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 1em;
+     /* ラベル間の余白 */
+}
+
+.hyphen{
+    margin-left: 13px;
+    margin-right: 13px;
+    text-align: center;
+    color: #8B7969;
+    font-size: 18px;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.confirmbutton {
+    width: 200px;
+    height: 46px;
+    padding: 0;
+    display: block;
+    align-items: center;
+    /* 縦方向中央揃え */
+    justify-content: center;
+    /* 横方向中央揃え */
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    background-color: #82756A;
+    margin: 10px auto;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.form__submit {
+    text-align: center;
+    margin-top: 24px;
+        /* お問い合わせ内容との距離を調整 */
+}
