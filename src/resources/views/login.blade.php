@@ -5,10 +5,13 @@
 
 @section('content')
 <main>
-  <header>
-    <h1>FashionablyLate</h1>
-    <h2>Login</h2>
-  </header>
+<header class="page-header">
+  <div class="page-header__top">
+    <h1 class="page-header__title">FashionablyLate</h1>
+    <button class="page-header__button">register</button>
+  </div>
+  <h2 class="page-header__subtitle">Login</h2>
+</header>
 
   <form class="form">
     <div class="form__container">

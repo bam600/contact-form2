@@ -37,3 +37,6 @@ Route::get('/questionform', [ContactController::class, 'questionform']);
 
 //登録完了画面表示
 Route::get('/thanks', [ContactController::class, 'thanks']);
+
+//管理画面表示
+Route::get('/admin', [ContactController::class, 'admin']);

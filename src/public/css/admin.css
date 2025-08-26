@@ -1,0 +1,141 @@
+ td,
+ th {
+     padding: 0;
+ }
+
+ td{
+    width: 100px;
+    height: 16px;
+    margin: 0 4px;
+    font-size: 20px;
+    color: #8B7969;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 1em;
+    padding: 10px 0px 0px 30px;
+ }
+
+ .form {
+     display: block;
+ }
+
+ /* フォーム中央揃え */
+ .form__actions {
+     margin-top: 24px;
+     /* ← 40pxから減らして自然な距離に */
+     text-align: center;
+ }
+
+/* テーブル項目用 */
+.form__label--screen{
+    width: 237px;
+    height: 59px;
+    color: #fff;
+    background-color: #8B7969;
+    font-size: 20px;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    /* 高さ方向の中央揃え */
+    padding-left: 30px;
+     /* 左側に余白 */
+    }
+
+.form__submit {
+    text-align: center;
+    border-bottom: 0.5px solid #E0DFDE;
+    padding: 5px 0;
+}
+
+.confirm__label{
+    height: 69px;
+    text-align: left;
+    color: #8B7969;
+    font-size: 18px;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 1em;
+     /* ラベル間の余白 */
+    display: flex;
+    align-items: center;
+    /* 高さ方向の中央揃え */
+    padding-left: 40px;
+    /* 左側に余白 */
+}
+
+/* テーブル中央揃え */
+.table {
+    /* ← 左右中央揃え & 下余白 */
+    margin: 30px auto 24px auto;
+   /* テーブルの隙間を消す */
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 管理画面＿検索ボタン */
+.adminbutton__search{
+    width: 102px;
+    height: 50px;
+    margin: 0 4px;
+    font-size: 18px;
+    background-color: #82756A;
+    border-color: #8B7969;
+    border: 1px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 1em;
+}
+
+/* 管理画面＿リセットボタン */
+.adminbutton__reset {
+    width: 102px;
+    height: 50px;
+    margin: 0 4px;
+    font-size: 18px;
+    background-color: #D9C6B5;
+    border-color: #D9C6B5;
+    border: 1px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 1em;
+}
+
+/* 管理画面＿エクスポートボタン */
+.adminbutton__export {
+    width: 148px;
+    height: 39px;
+    font-size: 18px;
+    border:none;
+    background-color: #E1DBD699;
+    color: #8B7969;
+    cursor: pointer;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    margin:0 0 0 680px;
+}
+
+/* 管理画面＿詳細ボタン */
+.adminbutton__details {
+    width: 76px;
+    height: 39px;
+    margin: 0 4px;
+    font-size: 18px;
+    border: solid 1px #D9C6B5;
+    color:#D9C6B5;
+    cursor: pointer;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 10px 0px 0px 60px;
+}

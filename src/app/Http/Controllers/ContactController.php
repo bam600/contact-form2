@@ -34,4 +34,11 @@ class ContactController extends Controller
   {
     return view('thanks');
     } 
+
+      //管理画面
+     public function admin()
+  {
+    return view('admin');
+    } 
+
 }

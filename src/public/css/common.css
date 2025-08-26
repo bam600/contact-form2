@@ -14,7 +14,7 @@ h2 {
     display: block;
     max-height: 100px;
     padding: 20px 0;
-    line-height: 1.2;
+    line-height: 1.2; 
     margin: 20px auto;
     color: #8B7969;
     font-family: 'Inika', serif;
@@ -22,11 +22,17 @@ h2 {
     font-weight: 400;
 }
 
+/* 横並び用のラッパー内では、h1 の margin をリセット */
+.page-header__top h1 {
+    margin: 0;
+}
+
  /* 見出し1 */
  h1 {
-    margin-top: 0;
+    /* margin-top: 0; */
     font-size: 40px;
-    text-align: center;border-bottom: 1px solid #E0DFDE;
+    /* text-align: center;border-bottom: 1px solid #E0DFDE; */
+    text-border: bottom 1px solid #E0DFDE;
     background-color: #ffffff;
 }
 
@@ -157,4 +163,18 @@ h2{
     font-weight: 400;
     margin-right: 1em;
     margin-top: 19px
+}
+
+.heder_btn{
+        width: 100px;
+        height: 39px;
+        margin: 0 4px;
+        font-size: 18px;
+        border: solid 1px #D9C6B5;
+        color: #D9C6B5;
+        cursor: pointer;
+        font-family: 'Inika', serif;
+        font-style: normal;
+        font-weight: 400;
+        margin: 10px 0px 0px 60px;
 }
