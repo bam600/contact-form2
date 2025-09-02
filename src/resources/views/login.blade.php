@@ -13,7 +13,7 @@
   <h2 class="page-header__subtitle">Login</h2>
 </header>
 
-  <form class="form">
+  <form class="form" action="/login" method="post">
     <div class="form__container">
       <div class="form__inner">
 
@@ -21,7 +21,7 @@
       <div class="form__row">
          <div class="form__cell">
             <label for="email" class="item__name">メールアドレス</label><br>
-            <input class="form__specific form__box" type="email" id="email" placeholder="123abc@gmail.com" required />
+              <input type="email" name="email" value="{{ old('email') }}" />
           </div>
       </div>
 
@@ -29,7 +29,7 @@
       <div class="form__row">
           <div class="form__cell">
             <label for="password" class="item__name">パスワード</label><br>
-            <input class="form__specific form__box" type="password" name="password" placeholder="abcd@icloud.com" required />
+              <input type="password" name="password" />
           </div>
       </div>
 

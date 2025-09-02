@@ -1,3 +1,9 @@
+.contact-table {
+    margin: 0 auto;
+    width: fit-content;
+    /* 内容に合わせて幅を調整 */
+}
+
 .contact-table th,
 .contact-table td {
     padding-top: 16px;
@@ -85,8 +91,7 @@ textarea {
     /* 角丸 */
 }
 
-input[name="category"],
-textarea {
+.category_form{
     width: 331px;
     height: 38px;
     background-color: #F4F4F4;
@@ -162,4 +167,12 @@ textarea {
     display: flex;
     justify-content: center;
     padding-top: 24px;
+}
+
+.form__error {
+    color: #d00;
+    font-size: 0.9em;
+    margin-top: 4px;
+    font-size: 18px;
+    font-family: 'Inika', serif;
 }

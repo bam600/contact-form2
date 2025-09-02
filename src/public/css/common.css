@@ -31,8 +31,10 @@ h2 {
  h1 {
     /* margin-top: 0; */
     font-size: 40px;
+    width: 100vmax;
+    text-align: center;
     /* text-align: center;border-bottom: 1px solid #E0DFDE; */
-    text-border: bottom 1px solid #E0DFDE;
+    border-bottom: 1px solid #E0DFDE;
     background-color: #ffffff;
 }
 
