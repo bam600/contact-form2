@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Models\Contact;
 use App\Http\Requests\AuthorRequest;
 
 class ContactController extends Controller
@@ -23,9 +24,8 @@ class ContactController extends Controller
 
       //確認画面
     public function confirm(AuthorRequest $request)
-{
+{  
     $contact = $request->all();
-
     // 性別ラベルの定義
     $gender_label = match((int)$contact['gender']) {
         1 => '男性',
@@ -40,9 +40,14 @@ class ContactController extends Controller
     // 電話番号合成
     $contact['tel'] = $contact['first_tel'] . '-' . $contact['middle_tel'] . '-' . $contact['last_tel'];
 
+    $category_id = $contact['category'];
+
     // カテゴリ名取得（null安全演算子で未選択にも対応）
     $contact['category_id'] = $contact['category_id'] ?? null;
 
+    $category = Category::find($category_id);
+
+    $category_name = $category-> content ;
 
     // Bladeに渡す
     return view('confirm', compact('contact', 'gender_label', 'category_name'));
@@ -64,10 +69,8 @@ class ContactController extends Controller
             'detail' =>'required|string',
         ]);
 
-
           Contact::create($validated);
           return redirect()->route('thanks');
-
     
       }
 

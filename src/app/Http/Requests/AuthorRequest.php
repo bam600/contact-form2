@@ -32,7 +32,7 @@ class AuthorRequest extends FormRequest
             'middle_tel' =>'required|max:5',
             'last_tel' =>'required|max:5',
             'address' =>'required',
-            'category_id' =>'required',
+            'category' =>'required',
             'content' =>'required|max:120'
         ];
     }
@@ -48,7 +48,7 @@ class AuthorRequest extends FormRequest
                 'middle_tel.required' => '電話番号を入力してください',
                 'last_tel.required' => '電話番号を入力してください',
                 'address.required' => '住所を入力してください',
-                'category_id.required' => 'お問い合わせの種類を入力してください',
+                'category.required' => 'お問い合わせの種類を入力してください',
                 'content.required' => 'お問い合わせの内容を入力してください',
 
                 'first_tel.max' => '電話番号は5桁までの数字で入力してください',

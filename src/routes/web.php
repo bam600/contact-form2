@@ -18,7 +18,7 @@ use App\Http\Responses\CustomRegisterViewResponse;
 */
 
 //問い合わせ入力フォーム表示
-Route::get('/', [ContactController::class,'questionform']);
+Route::get('/', [ContactController::class,'questionform'])->name('contact.form');
 
 // 問い合わせ入力フォームの入力内容を確認画面に渡して表示
 Route::post('/confirm', [ContactController::class, 'confirm'])->name('contact.confirm');
@@ -27,12 +27,6 @@ Route::post('/confirm', [ContactController::class, 'confirm'])->name('contact.co
 Route::post('/store', [ContactController::class, 'store'])->name('contact.store');
 
 Route::get('/thanks', [ContactController::class, 'thanks'])->name('thanks');
-
-
-Route::get('/logtest', function () {
-    Log::info('ログテスト成功！');
-    return 'ログ書き込み完了';
-});
 
 //ログイン入力画面表示
 Route::get('/login', [ContactController::class, 'login']);

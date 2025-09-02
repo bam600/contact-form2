@@ -21,7 +21,7 @@ confirm
     <h2>Confirm</h2>
   </header>
 
-    <form class="form" action="{{ route('contact.store') }}" method="post">
+    <form class="form" action="{{ route('contact.store') }}" method="POST">
       @csrf
       <table class="table">
 
@@ -87,7 +87,7 @@ confirm
           <th><label for="category" class="form__label--screen">お問い合わせの種類</label></th>
         <td>
           <span class="confirm__label">{{ $category_name }}</span>
-            <input type="hidden" name="category_id" value="{{ $contact['category_id'] }}">
+            <input type="hidden" name="category_id" value="{{ $contact['category'] }}">
         </td>
         </tr>
 
@@ -95,8 +95,8 @@ confirm
         <tr>
           <th><label for="content" class="form__label--screen">お問い合わせの内容</label></th>
           <td>
-            <span class="confirm__label">{{ $contact['detail'] }}</span>
-            <input type="hidden" name="detail" value="{{ $contact['detail'] }}">
+            <span class="confirm__label">{{ $contact['content'] }}</span>
+            <input type="hidden" name="detail" value="{{ $contact['content'] }}">
           </td>
         </tr>
 
@@ -104,7 +104,7 @@ confirm
       </table>
         <div class="form__actions">
           <button type="submit" class="confirmbutton__submit">送信</button>
-          <a href="{{ route('contact.form') }}" class="confirmbutton__edit">修正</a>
+          <!-- <a href="{{ route('contact.form') }}" class="confirmbutton__edit">修正</a> -->
         </div>
     </form>
   </main>
